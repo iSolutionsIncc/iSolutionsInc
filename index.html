@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #2d2d2d; /* Darker gray for better readability */
+}
+
+header {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out logo and nav */
+    align-items: center; /* Center vertically */
+    background-color: #003366; /* Softer dark blue */
+    padding: 15px 30px; /* More padding for better spacing */
+}
+
+.logo img {
+    width: 120px; /* Adjust logo size for better balance */
+    opacity: 0.9; /* Slightly transparent logo for blending */
+    transition: opacity 0.3s; /* Smooth transition effect */
+}
+
+.logo img:hover {
+    opacity: 1; /* Full opacity on hover for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Reduced margin for better spacing */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+    color: #ffffff; /* White for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+    color: #00ccff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+h1, h2, h3 {
+    color: #004080; /* Dark blue for headings */
+    text-align: center;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff; /* White background for content sections */
+}
+
+/* Banner Section */
+.banner {
+    background: url('https://example.com/banner.jpg') no-repeat center center/cover;
+    color: rgb(17, 16, 16);
+    padding: 100px 0;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.3rem;
+}
+
+.banner .btn {
+    background-color: #004080; /* Matching button color */
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.banner .btn:hover {
+    background-color: #003366;
+}
+
+
+
+
+/* Product Section */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f0f0f0; /* Light gray for contrast */
+}
+
+.product {
+    background-color: #ffffff; /* White background for product cards */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 15px 0;
+    color: #004080; /* Dark blue for product names */
+}
+
+.product p {
+    color: #333333; /* Dark gray for prices */
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product .btn {
+    background-color: #28a745; /* Green for the action buttons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.product .btn:hover {
+    background-color: #218838;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff; /* White for clean contrast */
+    padding: 40px;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+#contact a {
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="iSolutions Inc - Pre-owned and brand new iPhones">
+    <title>iSolutions Inc | iPhones for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo-1.jpg" alt="iSolutions Inc Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#preowned">Pre-Owned iPhones</a></li>
+                <li><a href="#brandnew">Brand New iPhones</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home">
+        <div class="banner">
+            <h1>Welcome to iSolutions Inc</h1>
+            <p>Your Trusted Source for Pre-Owned and Brand New iPhones</p>
+            <a href="#preowned" class="btn">Shop Pre-Owned</a>
+            <a href="#brandnew" class="btn">Shop Brand New</a>
+        </div>
+    </section>
+
+
+
+    <!-- Pre-Owned iPhones Section -->
+    <section id="preowned">
+        <h2>Pre-Owned iPhones</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/Iphone 11.jpg" alt="iPhone 11 Pre-Owned">
+                <h3>iPhone 11</h3>
+                <p>R6,999 - Pre-Owned</p>
+                <a href="https://wa.me/2767510614?text=I%20am%20interested%20in%20the%20Pre-Owned%20iPhone%2011" class="btn">Contact to Buy</a>
+            </div>
+            <div class="product">
+                <img src="images/IPHONE XR.png" alt="iPhone XR Pre-Owned">
+                <h3>iPhone XR</h3>
+                <p>R5,999 - Pre-Owned</p>
+                <a href="https://wa.me/2767510614?text=I%20am%20interested%20in%20the%20Pre-Owned%20iPhone%20XR" class="btn">Contact to Buy</a>
+            </div>
+            <div class="product">
+                <img src="images/Iphone-8.jpg" alt="iPhone 8 Pre-Owned">
+                <h3>iPhone 8</h3>
+                <p>R4,999 - Pre-Owned</p>
+                <a href="https://wa.me/2767510614?text=I%20am%20interested%20in%20the%20Pre-Owned%20iPhone%208" class="btn">Contact to Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand New iPhones Section -->
+    <section id="brandnew">
+        <h2>Brand New iPhones</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/Iphone 14.jpg" alt="iPhone 14">
+                <h3>iPhone 14</h3>
+                <p>R18,999 - New</p>
+                <a href="https://wa.me/2767510614?text=I%20am%20interested%20in%20the%20iPhone%2014" class="btn">Contact to Buy</a>
+            </div>
+            <div class="product">
+                <img src="images/iphone-13.jpeg" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p>R15,999 - New</p>
+                <a href="https://wa.me/2767510614?text=I%20am%20interested%20in%20the%20iPhone%2013" class="btn">Contact to Buy</a>
+            </div>
+            <div class="product">
+                <img src="images/Iphone 12.jpg" alt="iPhone 12">
+                <h3>iPhone 12</h3>
+                <p>R12,999 - New</p>
+                <a href="https://wa.me/2767510614?text=I%20am%20interested%20in%20the%20iPhone%2012" class="btn">Contact to Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+2767510614">076 751 0614</a></p>
+        <p>Email: <a href="mailto:scelomz47@gmail.com">scelomz47@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/2767510614">Chat with us on WhatsApp</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 iSolutions Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
